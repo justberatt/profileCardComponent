@@ -1,0 +1,102 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  box-sizing: border-box;
+  font-family: 'Kumbh Sans', sans-serif;
+  background: url(images/bg-pattern-top.svg) -750px -550px no-repeat,
+              url(images/bg-pattern-bottom.svg) 100px 350px no-repeat;
+  background-color: hsl(185, 75%, 39%);
+}
+
+.card-container {
+  width: 87%;
+  height: 23.8em;
+  margin: 0 auto;
+  border-radius: 15px;
+  background-color: white;
+}
+
+.background {
+  background: url(images/bg-pattern-card.svg) no-repeat;
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.statistics {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  line-height: 6px;
+  margin-top: 15px;
+}
+
+.personal-info {
+  margin-top: 110px;
+  margin-bottom: 30px;
+  line-height: 10px;
+  text-align: center;
+}
+
+.person-name,
+.age{
+  display: inline;
+}
+
+.person-name,
+.age {
+  width: 50%;
+}
+
+.person-name,
+.followers-number,
+.likes-number,
+.photos-number {
+  font-weight: 700;
+  font-size: 18px;
+  color: hsl(229, 23%, 23%);
+}
+
+.age, 
+.location, 
+.followers, 
+.likes, 
+.photos {
+   font-weight: 400;
+   font-size: 14px;
+   color: hsl(227, 10%, 46%);
+}
+
+.the-image img {
+  border: solid 6px white;
+  border-radius: 50%;
+  position: relative;
+  top: 85px;
+  left: 108px;
+}
+
+
+
+@media (min-width: 376px) {
+  .card-container{
+    width: 350px;
+  }
+
+  .the-image img {
+    border: solid 6px white;
+    border-radius: 50%;
+    position: relative;
+    top: 85px;
+    left: 122.5px;
+  }
+
+  .container {
+    background: url(images/bg-pattern-top.svg) -300px -500px no-repeat,
+              url(images/bg-pattern-bottom.svg) 700px 350px no-repeat;
+    background-color: hsl(185, 75%, 39%);
+  }
+}
